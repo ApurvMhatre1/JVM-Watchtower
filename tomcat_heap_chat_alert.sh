@@ -1,4 +1,11 @@
 #!/bin/bash
+# ============================================================
+# Project : JVM Watchtower
+# Purpose : Agentless JVM monitoring with automated diagnostics
+# Author  : odazu
+# Version : 1.0
+# ============================================================
+
 set -euo pipefail
 
 export PATH=/usr/local/bin:/usr/bin:/bin
