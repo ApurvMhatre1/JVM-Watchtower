@@ -31,16 +31,22 @@ tomcat_oldgen_usage.sh # Calculates OldGen usage (%)
 
 
 JVM Watchtower writes diagnostics to the following directories (replace the /dr01/diag/ with your own backup directory):
+
 /backup/diag/
+
 ├── thread_dumps/ # jstack outputs
+
 ├── gc_trends/ # jstat snapshots
+
 └── heap_dumps/ # heap dumps (.hprof)
 
 
 Create them once per server:
 
 mkdir -p /backup/diag/{thread_dumps,gc_trends,heap_dumps}
+
 chown <app_user>:<app_group> /backup/diag/{thread_dumps,gc_trends,heap_dumps}
+
 chmod 750 /backup/diag/{thread_dumps,gc_trends,heap_dumps}
 
 
